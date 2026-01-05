@@ -64,7 +64,7 @@ const Services: React.FC = () => {
             <div className="bg-white rounded-[30px] p-8 text-brand-blue flex flex-col justify-center items-center text-center shadow-inner border-4 border-brand-yellow/30">
                <div className="mb-6 flex justify-center transform hover:scale-110 transition-transform duration-300">
                  <img 
-                   src="https://img.icons8.com/illustrations/160/checklist.png" 
+                   src="orcamento.png" 
                    alt="Ilustração de Orçamento" 
                    className="w-32 h-32 md:w-44 md:h-44 object-contain drop-shadow-2xl"
                    onError={(e) => {
