@@ -66,9 +66,9 @@ const Services: React.FC = () => {
                  <img 
                    src="orcamento.png" 
                    alt="Ilustração de Orçamento" 
-                   className="w-32 h-32 md:w-44 md:h-44 object-contain drop-shadow-2xl"
+                   className="w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-2xl"
                    onError={(e) => {
-                     (e.target as HTMLImageElement).src = "https://img.icons8.com/color/144/get-quote.png";
+                     (e.target as HTMLImageElement).src = "https://img.icons8.com/3d-fluency/200/budget.png";
                    }}
                  />
                </div>
