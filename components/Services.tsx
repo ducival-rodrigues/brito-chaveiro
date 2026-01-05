@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SERVICES, DETAILED_SERVICES } from '../constants';
+import { SERVICES, DETAILED_SERVICES, CONTACT } from '../constants';
 import { CheckCircle } from 'lucide-react';
 
 const Services: React.FC = () => {
@@ -61,15 +61,27 @@ const Services: React.FC = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-[30px] p-8 text-brand-blue flex flex-col justify-center items-center text-center shadow-inner">
-               <div className="bg-brand-yellow p-4 rounded-full mb-6">
-                 <span className="text-4xl">🏢</span>
+            <div className="bg-white rounded-[30px] p-8 text-brand-blue flex flex-col justify-center items-center text-center shadow-inner border-4 border-brand-yellow/30">
+               <div className="mb-6 flex justify-center transform hover:scale-110 transition-transform duration-300">
+                 <img 
+                   src="https://img.icons8.com/illustrations/160/checklist.png" 
+                   alt="Ilustração de Orçamento" 
+                   className="w-32 h-32 md:w-44 md:h-44 object-contain drop-shadow-2xl"
+                   onError={(e) => {
+                     (e.target as HTMLImageElement).src = "https://img.icons8.com/color/144/get-quote.png";
+                   }}
+                 />
                </div>
-               <h4 className="font-display text-2xl mb-4">CONTRATO PARA CONDOMÍNIOS</h4>
-               <p className="font-semibold mb-6">Oferecemos pacotes especiais de manutenção para empresas, associações e condomínios em toda Manaus.</p>
-               <button className="bg-brand-blue text-white px-8 py-3 rounded-full font-bold hover:bg-blue-800 transition-colors shadow-lg">
+               <h4 className="font-display text-2xl mb-4 uppercase">CONTRATO PARA CONDOMÍNIOS</h4>
+               <p className="font-semibold mb-6 max-w-xs">Oferecemos pacotes especiais de manutenção para empresas, associações e condomínios em toda Manaus.</p>
+               <a 
+                 href={`https://wa.me/${CONTACT.whatsapp}`}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="bg-brand-blue text-white px-8 py-4 rounded-2xl font-black text-lg hover:bg-blue-800 transition-all shadow-xl hover:-translate-y-1 active:translate-y-0 inline-block"
+               >
                  SOLICITAR ORÇAMENTO
-               </button>
+               </a>
             </div>
           </div>
         </div>
