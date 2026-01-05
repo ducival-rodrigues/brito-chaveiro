@@ -50,7 +50,7 @@ const App: React.FC = () => {
             <p className="text-white font-bold text-xl mb-8">Não espere mais. Estamos prontos para te atender em qualquer lugar de Manaus!</p>
             <a 
               href={`tel:${CONTACT.phone1.replace(/\D/g, '')}`} 
-              className="bg-white text-red-600 px-12 py-5 rounded-2xl font-black text-2xl hover:bg-brand-yellow hover:text-brand-blue transition-all shadow-2xl transform hover:scale-105 inline-block"
+              className="bg-white text-red-600 px-6 sm:px-12 py-5 rounded-2xl font-black text-xl sm:text-2xl hover:bg-brand-yellow hover:text-brand-blue transition-all shadow-2xl transform hover:scale-105 whitespace-nowrap inline-flex items-center justify-center"
             >
               LIGAR: {CONTACT.phone1}
             </a>
