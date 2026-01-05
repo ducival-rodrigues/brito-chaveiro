@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a 
               href={`tel:${CONTACT.phone1.replace(/\D/g, '')}`}
-              className="bg-brand-blue hover:bg-blue-800 text-white px-8 py-4 rounded-2xl text-xl font-black transition-all shadow-xl transform hover:-translate-y-1 active:translate-y-0"
+              className="bg-brand-blue hover:bg-blue-800 text-white px-6 sm:px-8 py-4 rounded-2xl text-lg sm:text-xl font-black transition-all shadow-xl transform hover:-translate-y-1 active:translate-y-0 whitespace-nowrap inline-flex items-center justify-center"
             >
               CHAMAR AGORA: {CONTACT.phone1}
             </a>
